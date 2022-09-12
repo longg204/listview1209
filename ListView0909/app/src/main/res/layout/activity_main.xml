@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ffe400"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/monhoc"
+        android:layout_width="409dp"
+        android:layout_height="323dp"
+        android:layout_below="@+id/edit_btn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="132dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="369dp"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Môn học"
+        android:paddingLeft="15dp"
+        android:inputType="textPersonName"
+        android:textColorHint="#000" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/edit_btn"
+        android:backgroundTint="@color/black"
+        android:text="ADD"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/edit_btn"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/clear_btn"
+        android:backgroundTint="#000"
+        android:text="Edit"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/clear_btn"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#000"
+        android:text="DELE"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nguyen Viet Long - 2050531200223"
+        android:layout_marginTop="650dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="#000"/>
+
+</RelativeLayout>
